@@ -51,8 +51,6 @@
     
 }
 
-
-
 .logo-accent {
     color:var(--accent-color);
 }
@@ -213,6 +211,7 @@ ul {
 
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     border: none;
 
@@ -225,6 +224,7 @@ ul {
 
     cursor: pointer;
 }
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -275,7 +275,7 @@ ul {
 }
 .close-button:hover,
 .close-button:focus {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
 .form {
@@ -312,23 +312,20 @@ ul {
        
 }
 .form-field input {
-    
-    
     height: 40px;
     padding: 11px 12px 11px 42px;
    
-
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
 .form-field input:hover,
 .form-field input:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--accent-color);
     cursor: pointer;
     
 }
 .form-field input:focus + .icon-form {
-    fill: #2196F3;
+    fill: var(--accent-color);
 }
 
 
@@ -357,11 +354,14 @@ ul {
 }
 
 .policy {
-    display: block;
+   
     margin-top: 20px;
     margin-bottom: 30px;
 }
 .policy label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
   
     font-size: 14px;
     line-height: 1.71;
@@ -369,7 +369,29 @@ ul {
     
 }
 .policy-link {
+    margin-left: 4px;
     color: var(--accent-color);
+}
+.checkbox {
+    appearance: none; 
+    position: absolute;
+}
+.check-icon {
+    width: 16px;
+    height: 15px;
+    border: 1px solid #000000;
+    border-width: 2px;
+    border-radius: 2px;
+    margin-right: 9px;
+
+    fill: var(--primary-white-color);
+}
+.checkbox:checked + .check-icon {
+    background-color: var(--accent-color);
+    background-origin: content-box;
+    border-color: var(--accent-color);
+    
+    
 }
 .form-button {
     min-width: 200px;
@@ -406,7 +428,6 @@ ul {
 }
 
 .descrip {
-    
     width: 270px;
 }
 
@@ -459,16 +480,12 @@ ul {
     position: relative;
     z-index: 1;
     
-    
-   
-
 }
 .work-picture { 
     display: block;
     
 }
 .picture-desc {
-    
     position: absolute;
     bottom: 0;
     height: 70px;
@@ -527,8 +544,6 @@ ul {
 }
 
 .desc {
-    
-
     color: var(--second-text-color);
     font-size: 16px;
     line-height: 1.2;
@@ -743,7 +758,7 @@ ul {
     padding: 10px 28px;
     margin-left: 12px;
     margin-top: 48px;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--primary-white-color);
@@ -823,7 +838,6 @@ ul {
     margin-bottom: 0px;
 }
 .port-item .link {
-   
     display: block;
 
     transition-duration: 250ms;
