@@ -401,7 +401,7 @@ ul {
 }
 .check-icon {
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     width: 16px;
     height: 15px;
